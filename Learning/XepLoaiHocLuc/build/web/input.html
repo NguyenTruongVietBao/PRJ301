@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="XepLoaiHocLucServlet" method="post">
+            Họ và tên: <input type="text" name="hovaten"> 
+            <br>
+            Giới tính: 
+            <input type="radio" name="gioitinh" checked value="0"> Nam
+            <input type="radio" name="gioitinh" value="0">         Nữ
+            <br>
+            Diểm: <input type="text" name="diem">
+            <br>
+            Môn học:    <select name="monhoc">
+                            <option value="PRJ">PRJ</option>
+                            <option value="JPD">JPD</option>
+                            <option value="SSG">SSG</option>
+                        </select>
+            <br>
+            <input type="submit" name="Submit">
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            Session giúp ta lưu trữ trạng thái của người dùng, lưu trữ TK đăng nhập
+        </div>
+        <div>                
+            - Khởi tao Session:
+            HttpSession session = request.getSession(true/false);
+
+            - Gán Session trong Servlet:
+            session.setAttribute(“nameobject”, object);
+
+            -  Lay gia tri session:
+            session.getAttribute(“nameobject”);
+
+            -  Xoá mot session trong JSP, Servlet:
+            Huy tat cả session:     session.invalidate();
+            Huy một session:        session.removeAttribute(“nameobject”);
+        </div>
+    </body>
+</html>
